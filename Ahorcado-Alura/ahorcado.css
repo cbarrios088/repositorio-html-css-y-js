@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #f3f5fc;
+    background-size: cover;
+    
+}
+
+main{
+width: 80%;
+margin: auto;
+padding: 20px;
+background: #f3f5fc;
+
+}
+
+.imagenImg{
+margin-top: 1%;
+margin-left: 5%;
+float: inherit;
+}
+
+.title{
+    float: inherit;
+    margin-left: 35%;  
+    color: darkblue;
+}
+
+.logo{
+    width: 100%;
+    float: left;
+
+}
+
+
+
+#imagen{
+    width: 200px; 
+    margin-left: 38%;
+   
+   }
+
+#palabra_a_adivinar span{
+font-size: 2em;
+border-bottom: 2px solid black;
+width: 30px;
+margin-right: 15px;
+display: inline-block;
+text-align: center;
+   }
+ #palabra_a_adivinar{
+    margin-left: 25%;   
+ }
+
+ #resultado{
+     text-align: center;
+     color: darkblue;
+ }
+
+#partida_juego{
+    background: darkblue;
+    padding: 10px;
+    width: 20%;
+    height: 50%;
+    border-radius:15px;
+    margin-left: 30%;
+    
+}
+#boton_redirse{
+    padding: 10px;
+    width: 20%;
+    height: 50%;
+    border-radius:15px;
+    
+      
+}
+
+#letras{
+    margin-left: 5%;
+    padding: 2em;
+    flex-wrap: wrap;
+ 
+}
+
+#letras button{
+    width: 40px;
+    margin-top: 1%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+.caro{
+    
+    text-align: center;
+    
+}

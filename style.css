@@ -1,0 +1,514 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+   --color-titulos: #464646;
+   --color-fondo-azul: #EAF2FD;
+   --color-cajas: #fbfbfb;
+   --azul-botones: #2A7AE4;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-titulos);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu{
+display: flex;
+align-items: center;
+justify-content: space-between;
+align-content: flex-end;
+height: 10vh;
+margin: 0px 153px;
+
+}
+
+.menu__list{
+    display: flex;
+    padding: .5rem 1rem ;
+  
+}
+
+.menu__list li:hover{
+background-color: var(--azul-botones);
+transition: 0.3s;
+}
+
+
+section.menu .menu__header{
+    display: flex;
+    margin-right: 10%;
+    
+    
+}
+
+header .menu__header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-titulos);
+ 
+}
+/* items del menu*/
+section.menu nav ul.menu__list {
+display: flex;
+justify-content: space-between;
+font-size: 16px;
+width: 750px;
+
+}
+/* stilo para email nav */
+section.menu nav ul.menu__list li:nth-child(6) {
+    font-weight: 800;
+    color: black;
+    
+}
+
+
+
+/*Sección Title*/
+
+section.title{
+    margin: 0 153px;
+    width: 80%;
+    color: var(--color-titulos);
+
+}
+
+section.title div.title__div {
+justify-content: space-between;
+align-content: flex-start;
+display: flex;
+flex-direction: row-reverse;
+
+}
+
+/* titulo principal*/
+section.title div.title__container h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 61px;
+    
+
+}
+
+
+section.title img.title__profile {
+    width: 368px;
+    border-radius: 50%;
+    padding: 15px;
+   
+}
+
+section.title div.title__div div.title_container h3 {
+font-size: 22px;
+line-height: 23px;
+width: 600px;
+margin-bottom: 30px;
+
+}
+
+section.title div.title__div div.title__container ul {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+width: 500px;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
+}
+
+/*Sección About*/
+
+section.about{
+    background: url(imagenes/pared-ladrillo-pastel.png);
+    padding: 62px 153px;
+   
+}
+
+section.about div.about__container {
+    width: 700px;
+  
+}
+
+section.about h3.about__title{
+    font-size: 32px;
+    
+}
+/* textos seccion about*/
+section.about div.about__container p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+   
+}
+
+/*seccion skills tamaño*/
+section.skills {
+    margin: 64px 100px;
+    
+}
+
+
+    /*titulo de la seccion*/
+section.skills h3.skills__title {
+font-size: 32px;
+text-align: center;
+
+
+}
+
+section.skills div.skills__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+section.skills div.skills__box{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 16px;
+background-color: var(--color-cajas);
+margin: 22px 15px;
+width: 150px;
+height: 160px;
+}
+
+
+.skills__box:hover{
+transform: scale(1.15);
+}
+
+section.skills div.skills__box ul{
+margin: 0;
+padding: 0;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+color: var(--color-titulos);
+
+}
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    margin: 64px 100px;
+   
+}
+
+
+section.hobbies h3.hobbies__title {
+    font-size: 32px;
+    text-align: center;
+    
+}
+
+section.hobbies div.hobbies__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+   
+}
+
+/*cajas hobbies*/
+section.hobbies div.hobbies__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    background-color: var(--color-cajas);
+    margin: 22px 15px;
+    width: 150px;
+    height: 160px;
+   
+
+}
+section.hobbies div.hobbies__box ul{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-titulos);
+    
+}
+
+.hobbies__box:hover {
+    transform: scale(1.15);
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+padding: 64px;
+background-color: var(--color-fondo-azul);
+}
+
+section.academic h2.academic__title {
+font-size: 32px;
+text-align: center;
+}
+
+section.academic div.academic__courses {
+    display: flex;
+    justify-content: center;
+    
+}
+
+section.academic div.academic__courses__box {
+width: 26rem;
+margin: 0 1rem;
+}
+
+section.academic div.academic__courses__box ul {
+margin: 32px;
+padding: 0;
+}
+section.academic div.academic__courses__box ul li{
+    margin: 32px;
+    padding: 0;
+}
+div.academic__courses__box ul li.academic__courses__items_img{
+background-color: var(--color-cajas);
+padding: 8%;
+
+}
+ 
+
+/* experiencia*/
+
+section.experience{
+    padding: 64px;
+   
+}
+.experience__box {
+    display: flex;
+align-items: center;
+
+}
+
+.experiencie__box {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 30px;
+    
+}
+
+section.experience h2.experience__section__title {
+    font-size: 32px;
+}
+
+
+.experience__section__title{
+    font-size: 32px;
+    text-align: center;
+
+}
+
+.experiencia__botao--repo {
+    width: 105px;
+    height: 51px; 
+    border-color:  #2A7AE4; 
+}
+.experience__botao--demo {
+    background-color: #2A7AE4;
+    width: 105px;
+    height: 51px;
+    border-color:  #2A7AE4;
+    transition: 0.5s;
+}
+.experience__botao--demo:hover {
+    color: white;
+}
+
+.experience__title {
+    font-size: 50px;
+    
+}
+.experience__text {
+    font-size: 16px;
+    color: var(--color-titulos);
+}
+
+.experience__title {
+    font-size: 22px;
+    text-align: center;
+}
+
+.experience__img {
+    width: 60%;
+    box-shadow: 0px 0px 5px 1px var(--color-titulos);
+    margin-left: 5%;
+    
+}
+
+.experience__info-container {  /* caja con demo */
+    margin: 5%;
+   font-size: 22px; 
+   align-content: center;
+   font-weight: bold;
+}
+
+
+/*Contacto*/
+
+section.formcontato  div.formcontato__contacto { 
+   height: 700px;
+   width: 1440%;
+   padding: 3% 6% 5%;
+   gap: 10px;
+ 
+}
+
+.formcontato__text {
+    margin-top: 1%;
+    margin-left: 2%;
+    
+}
+
+.formcontato__contacto {
+    display: flex; 
+    background-color: var(--color-fondo-azul);
+    
+    
+}
+
+.formcontato {
+    display: flex;
+   
+   
+}
+
+.formcontato__img {
+   height: 700px;
+   margin-top: 5%;
+   margin-left: 2%;
+   
+}
+
+.formcontato__title {
+    font-size: 32px;
+    
+}
+
+.formcontato__subtext {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--color-titulos);
+    
+}
+
+.formcontato__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  justify-content:space-between ;
+}
+ 
+  .formcontato__input {
+    height: 56px;
+    width: 656px;
+    border-radius: 4px;
+    outline: 0px;
+    border: none;
+    border-bottom: 2px solid var(--color-titulos);
+    
+  }
+    
+ .formcontato__textarea {
+    width: 656px;
+    height: 133px;
+    border-radius: 4px;
+    gap: 4px;
+    outline: 0px;
+    border-bottom: 2px solid var(--color-titulos);
+   
+
+ }
+
+ .formcontato__botao {
+width: 160px;
+height: 50px;
+margin-top: 6px;
+background-color: #2A7AE4;
+border: none;
+padding: 5px;
+color: white;
+transition: 0.5s;
+ }
+
+ .formcontato__botao:hover{
+color: black;
+ }
+
+/*footeer*/
+
+section.footer {
+    text-align: center;
+    font-size: 15px;
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

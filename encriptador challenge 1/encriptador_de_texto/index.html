@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js"></script>
+    <title>challenge 1</title>
+  </head>
+  <body>
+    <div class="cuerpo">
+      <div class="logo">
+        <img class="logoImg" src="img/logo.png" />
+        <h1 class="tittle">Encriptador de texto</h1>
+      </div>
+
+      <div class="izquierda">
+        <input
+          class="text-input"
+          id="inputTexto"
+          type="text"
+          placeholder="Ingrese el texto aqui "
+        />
+        <img src="img/vector.png" id="vector"
+       <h6 class = "minusculas">solo minusculas y sin acentos </h6>
+        
+    
+      </div>
+
+      <div class="derecha">
+        <img src="img/muneco.png" id="imagen-derecha" />
+        <h1 id="mensaje">Ningun mensaje fue encontrado</h1>
+        <textarea id="texto" name="name" id="" cols="80" rows="8">
+Ingrese el texto que desee encriptar o desencriptar</textarea
+        >
+        <button id="copiar" type="button" name="button" onclick="copiar()">
+          ¡copiar!
+        </button>
+        
+      </div>
+      
+     
+      <div class="boton">
+      
+         
+        
+        <button type="button" id="boton-izq" onclick="encriptar()">
+          Encriptar
+        </button>
+        
+        <button type="button" id="boton-der" onclick="desencriptar()">
+          Desencriptar
+        </button>
+        <h6 class="caro"> &copy Carolina Barrios - 2022</h6>
+      </div>
+     
+    </div>
+    
+    
+
+  </body>
+</html>
